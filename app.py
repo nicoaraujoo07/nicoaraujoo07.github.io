@@ -85,4 +85,4 @@ def enviar_correo():
     except:
         return redirect(url_for("registration",error_flag=True))
 if __name__ == '__main__':
-    app.run("localhost", port="5001",debug=True)
+    app.run()
