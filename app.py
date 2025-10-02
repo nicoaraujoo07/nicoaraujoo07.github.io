@@ -37,14 +37,14 @@ lista = ["COMPROMISO SOCIAL: Organizamos actividades comunitarias, campañas sol
 "EQUIPO HUMANO: Nuestro cuerpo técnico, profesores y voluntarios comparten una visión común basada en la empatía, la inclusión y el profesionalismo."]
     
 lista2 = [
-    ["Fútbol ⚽", "futbol.jpg"],
-    ["Voley 🏐", "voley.jpeg"],
-    ["Natación 🤽🏻‍♂️", "natacion.jpeg"],
-    ["Golf ⛳", "golf.jpg"],
-    ["Gimnasia artística 🤸🏻‍♀️", "gimnasia-artistica.jpeg"],
-    ["Atletismo 🏃🏻‍➡️", "atletismo.jpeg"],
-    ["Basquet 🏀", "basquet.jpeg"],
-    ["Otros... ⭐", "otros.jpg"]
+    ["Fútbol", "futbol.jpg"],
+    ["Voley", "voley.jpeg"],
+    ["Natación", "natacion.jpeg"],
+    ["Golf", "golf.jpg"],
+    ["Gimnasia artística", "gimnasia-artistica.jpeg"],
+    ["Atletismo", "atletismo.jpeg"],
+    ["Basquet", "basquet.jpeg"],
+    ["Otros...", "otros.jpg"]
     ]
           
 
@@ -85,4 +85,5 @@ def enviar_correo():
     except:
         return redirect(url_for("registration",error_flag=True))
 if __name__ == '__main__':
-    app.run("localhost", port="5001",debug=True)
+    app.run()
+
